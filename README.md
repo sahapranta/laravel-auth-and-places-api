@@ -12,11 +12,17 @@ This assignment is to setup laravel REST API for Authentication and retrieving p
 -   Run `php artisan migrate --seed`
 -   Run `php artisan serve`
 
+I cannot provide Google Map API key because I don't have the that, So, you need to add the api key to the .env file.
+
+-   Set GOOGLE_MAP_API_KEY to the `.env`
+
 #### Use this credential if seeded using default seeder while migration
 
-```bash
-  "email":"test@example.com",
-  "password":"password"
+```json
+{
+    "email": "test@example.com",
+    "password": "password"
+}
 ```
 
 ## Routes
@@ -31,14 +37,12 @@ This assignment is to setup laravel REST API for Authentication and retrieving p
 
 For simplicity sqlite is used as database, if needed change it to mysql from .env
 
-
 ## Testing
 
 -   Run `php artisan test`
 
 <br/>
 <br/>
-
 
 # API Documentation
 
@@ -69,14 +73,17 @@ Retrieves a list of places based on latitude and longitude coordinates.
     "results": ["Place 1", "Place 2", "Place 3"]
 }
 ```
+
 <br/>
 
 ### Login
+
 #### Request
 
 `POST /api/login`
 
 #### Request Body
+
 `email, password`
 
 ### Response
@@ -92,9 +99,10 @@ Retrieves a list of places based on latitude and longitude coordinates.
 ```
 
 -   Status Code: `401 Unauthorized` if the email or password is incorrect.
-<br/>
+    <br/>
 
 ### Register
+
 #### Request
 
 `POST /api/signup`

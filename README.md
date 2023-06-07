@@ -1,4 +1,6 @@
-## Spacenus GmbH Assignment
+# Spacenus GmbH Assignment
+
+![Test](https://github.com/sahapranta/laravel-auth-and-places-api/actions/workflows/laravel.yml/badge.svg)
 
 This assignment is to setup laravel REST API for Authentication and retrieving places within a 5km radius using Google Map API that takes Latitude and Longitude as url params.
 
@@ -29,14 +31,16 @@ This assignment is to setup laravel REST API for Authentication and retrieving p
 
 For simplicity sqlite is used as database, if needed change it to mysql from .env
 
+
+## Testing
+
 -   Run `php artisan test`
 
 <br/>
 <br/>
 
-## API Documentation
 
----
+# API Documentation
 
 ### Get Places
 
